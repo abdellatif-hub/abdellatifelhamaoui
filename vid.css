@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+DE+Grund:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100VH;
+    background: url("img1.jpg"),no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: url(cursor\ \(2\).png),auto;
+}
+
+body{
+    text-align: center;
+}
+body h1{
+    color: white;
+    font-family: "Playwrite Deutschland Grundschrift";
+    /* font-family: "Merriweather"; */
+    font-family: "Playfair Display";
+
+font-size: 29PX;
+}
+body span{
+    color: rgb(130, 130, 235);
+}
+body h3{
+    /* font-family: "Playfair Display"; */
+    color: rgb(184, 173, 196);
+    font-family: "Playwrite Deutschland Grundschrift";
+    margin-top: 14PX;
+    font-size: 18PX;
+
+}
+body h5{
+color: rgb(255, 255, 255);
+font-family: "Merriweather";
+margin-top: 10PX;
+font-size: 14PX;
+
+}
+body #hh{
+    position: absolute;
+    left: 43PX;
+    top: 28PX;
+    font-size: 43PX;
+}
+body .vid {
+border-radius: 15PX;
+margin-top: 23PX;
+}
+body .vid video{
+    border-radius: 15PX;
+    height: 450PX;
+}
