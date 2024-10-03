@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="">
+
+  <title> Finexo </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="tps.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="responsive.css" rel="stylesheet" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <h1 id="tp1">TP°4</h1>
+  <h3 id="tp2">________</h3>
+  <div class="hero_area">
+
+    <div class="hero_bg_box">
+      <div class="bg_img_box">
+        <img src="hero-bg.png" alt="">
+      </div>
+    </div>
+
+    <!-- header section strats -->
+    
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      TP numéro 4<br>
+                      
+                    </h1>
+                    <p>
+                      Les exercices comprend  les expressions regulieres  Dans L'exercice 1 et  Surcharge des Opérateurs et 
+                      Utilisation des Méthodes Abstraites Dans L'exercice 2 et 3 et 4.
+                    </p>
+                    <div class="btn-box">
+                      <a href="#" class="btn1">
+                        La Correction
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="file.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+
+    </section>
+    <!-- end slider section -->
+  </div>
+<div id="tp">
+  <i class='bx bx-x' id="i"></i>
+  <div class="all">
+  <div class="code">
+    <h4><pre>
+<span>exercice 1 :</span>
+ import re
+ def valideEmail(email):
+      exEmail = r"[a-zA-Z\._+-]+[0-9]*@[a-z]+\.[a-z]+"
+          return re.match(exEmail, email)
+      
+    def extractiontélé(chaine):
+          return re.findall(r" [(05|06|07|08|+2125|+2126|+2127|+2128|002125|002126|002127|002128)][0-9]{8,} ", chaine)
+      
+    input = "aaitali624@gmail.com"
+      if valideEmail(input):
+          print("valid")
+    else:
+          print('invalid')
+      
+cc = " 0625223862 - 0524394633 - 0742836441 - 00212828524399 - +212762996143 - 06369261851 "
+      </pre></h4>
+  </div>
+  <button class="btn btn-success float-left" id="btn4">Run Code</button><br><br>
+  <div class="run">
+    <div class="run1 ">
+      <h5><pre>
+  valid
+  [' 0625223862 ', ' 0524394633 ', ' 0742836441 ', ' 00212828524399 ', ' +212762996143 ', ' 06369261851 ']
+</pre></h5>
+    </div>
+  </div>
+  </div>
+<br>
+  <div class="all">
+    <div class="code">
+      <h4><pre>
+        <span>exercice 2 :</span>
+
+  def remplacerChaine(text):
+  liste = ["abcd", "efgh", "ijkl", "mnop"]
+    for x in liste:
+            text =  re.sub(r""+x, "****", text)
+        return text
+    
+  def valideCartCrédit(numéro):
+        return re.match(r"[0-9]{4$}(-| )?[0-9]{4$}(-| )?[0-9]{4$}(-| )?[0-9]{4$}", numéro)
+    
+    tt = "  Abdelatif a 20 ans **** et son CIN BH649401 et ****  #son ID **** est 1521 et son tele est 0616728493 #et son email est abdelatifelhamaoui@gmail.com, hamid a 15 ans et son tele est +212625378594 et son CIN BH10731 son ID st 4109 et son email est hamid00@gmail.com"
+    nn = "0382 9262 9468 1720"
+    
+    print(remplacerChaine(tt))
+    if valideCartCrédit(nn):
+        print("valid")
+    else:
+        print('invalid')</pre></h4>
+    </div>
+    <button class="btn btn-success float-left"id="btn5">Run Code</button><br><br>
+    <div class="run">
+      <div class="run2 ">
+        <h5><pre>
+  Abdelatif a 20 ans **** et son CIN BH649401 et ****  #son ID **** est 1521 et son tele est 0616728493 #et son email est abdelatifelhamaoui@gmail.com, hamid a 15 ans et son tele est +212625378594 et son CIN BH10731 son ID st 4109 et son email est hamid00@gmail.com
+  invalid
+</pre></h5>
+      </div>
+    </div>
+    </div>
+  <br>
+    <div class="all">
+      <div class="code">
+        <h4><pre>
+          <span>exercice 3 :</span>
+
+  def extractionHashtags(chaine):
+    return re.findall(r"#(\w+)", chaine)
+      
+  print(extractionHashtags(tt))
+      
+  def valideMotPasse(text):
+          x = re.match(r".*[A-Z].*", text)
+          y = re.match(r".*[a-z].*", text)
+          z = re.match(r".*[0-9].*", text)
+          a = re.match(r".*[@ + - ; _ ' / = *].*", text)
+          b = re.match(r".{8,}", text)
+          if x and y and z and a and b:
+              return True
+          else:
+              return False
+      
+      
+  mot_de_passe = "7G72GK_gdj'fdh"
+  if valideMotPasse(mot_de_passe):
+          print("mot de passe force")
+  else:
+          print('mot de passe faible')</pre></h4>
+      </div>
+      <button class="btn btn-success float-left" id="btn6">Run Code</button><br><br>
+      <div class="run">
+        <div class="run3 ">
+          <h5><pre>
+  ['son', 'et']
+  mot de passe force</pre></h5>
+        </div>
+      </div>
+      </div>
+    <br>
+      <div class="all">
+        <div class="code">
+          <h4><pre>
+            <span>exercice 4 :</span>
+
+  def extractionHref(text):
+        hrefs = re.findall(r"href=\".+\"", text)
+      return hrefs
+            
+    f = open('test.htm', "r")
+    text = f.read()
+      achrefs = extractionHref(text)
+  print(achrefs)
+        
+        def urlEX(hrefs):
+            urlsNoComp = []
+            urlsComp = []
+        
+            for href in hrefs:
+                href = re.sub(r"href=\"", "", href)
+                urlsNoComp.append(href)
+            for href in urlsNoComp:
+                href = re.sub(r"\"", "", href)
+                urlsComp.append(href)
+        
+            return urlsComp
+        
+  urls = urlEX(achrefs)
+  print(urls)
+        
+  def valideURL(urls):
+            urlsValide = []
+            for url in urls:
+                a =  re.match(r"htpps://www\.\w+\.\w+", url)
+                b = re.match(r"htpp://www\.\w+\.\w+", url) 
+                c = re.match(r"^(w)ww\.\w+\.\w+", url)
+                if a or b or c:
+                    urlsValide.append(url)
+    return urlsValide
+        
+  print(valideURL(urls))</pre></h4>
+        </div>
+        <button class="btn btn-success float-left" id="btn7">Run Code</button><br><br>
+        <div class="run">
+          <div class="run4 ">
+            <h5><pre>
+  ['href="htpp://www.google.com"', 'href="htpps://www.udemy.ma"', 'href="htpp://youtube.com"', 'href="www.3ali.net"']
+  ['htpp://www.google.com', 'htpps://www.udemy.ma', 'htpp://youtube.com', 'www.3ali.net']
+  ['htpp://www.google.com', 'htpps://www.udemy.ma', 'www.3ali.net']</pre></h5>
+          </div>
+        </div>
+        </div>
+      <br><br><br>
+</div>
+<div id="hh">
+  <a href="index.html"><i class='bx bx-arrow-back' style='color:#7effff'  ></i></a>
+</div>
+<div id="un"><a href="tp1.html">1</a></div>
+<div id="deux"><a href="tp2.html">2</a></div>
+<div id="quatre"><a href="tp3.html">3</a></div>
+  <!-- service section -->
+
+
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- custom js -->
+  <script type="text/javascript" src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+  <script>
+    $(document).ready(function(){
+      $(".btn1").click(function(){
+        $("#tp").slideToggle(3000)
+        $("#tp1").show(1000)
+        $("#tp2").slideToggle(3000)
+        $("#un,#deux,#quatre,#hh").hide(1000)
+      })
+      $("#i").click(function(){
+        $("#tp").slideUp(2000)
+        $("#tp1").hide(1000)
+        $("#tp2").hide(1000)
+        $("#un,#deux,#quatre,#hh").show(1000)
+      })
+      $("#btn4").click(function(){
+        $(".run1").show()
+      })
+      $("#btn5").click(function(){
+        $(".run2").show()
+      })
+      $("#btn6").click(function(){
+        $(".run3").show()
+      })
+      $("#btn7").click(function(){
+        $(".run4").show()
+      })
+    }
+  )
+   </script>
+</body>
+
+</html>

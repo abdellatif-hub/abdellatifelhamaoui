@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="">
+
+  <title> Finexo </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="tps.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="responsive.css" rel="stylesheet" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <h1 id="tp1">TP°2</h1>
+  <h3 id="tp2">________</h3>
+  <div class="hero_area">
+
+    <div class="hero_bg_box">
+      <div class="bg_img_box">
+        <img src="hero-bg.png" alt="">
+      </div>
+    </div>
+
+    <!-- header section strats -->
+    
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      TP numéro 2<br>
+                      
+                    </h1>
+                    <p>
+                      Les exercices comprend  Modélisation d'une Classe Dans L'exercice 1 et Principe de l'Encapsulation Dans L'exercice 2 et  Principe de l'Héritage 3, Principe du Polymorphisme Dans L'exercice 4
+
+                      
+                    </p>
+                    <div class="btn-box">
+                      <a href="#" class="btn1">
+                        La Correction
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="file.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+
+    </section>
+    <!-- end slider section -->
+  </div>
+<div id="tp">
+  <i class='bx bx-x' id="i"></i>
+  <img src="TP N°2_page-0003.jpg" alt="">
+  <div class="all">
+    <div class="code">
+      <h4><pre>
+class Produit:
+        def __init__(self, nom, prix, quantite_stack):
+            self.nom = nom
+            self.prix = prix
+            self.quantite = quantite_stack
+    
+        def afficher_details(self):
+            print(f"Nom : {self.nom}, Prix : {self.prix}, Quantité Stock : {self.quantite}")
+    
+  p1 = Produit("mac", 10000, 2)
+  p1.afficher_details()</pre></h4>
+    </div>
+    <button class="btn btn-success float-left" id="btn4">Run Code</button><br><br>
+    <div class="run">
+      <div class="run1 ">
+        <h5><pre>
+Nom : mac, Prix : 10000, Quantité Stock : 2
+  </pre></h5>
+      </div>
+    </div>
+    </div>
+  <br>
+  <img src="TP N°1 POO 2_page-0004.jpg" alt="">
+  <div class="all">
+    <div class="code">
+      <h4><pre>
+class Produit:
+        def __init__(self, nom, prix, quantite_stack):
+            self.__nom = nom
+            self.__prix = prix
+            self.__quantite = quantite_stack
+    
+        def afficher_details(self):
+            print(f"Nom : {self.__nom}, Prix : {self.__prix}, Quantité Stock : {self.__quantite}")
+    
+        def get_nom(self):
+            return self.__nom
+        def get_prix(self):
+            return self.__prix
+        def get_quantité(self):
+            return self.__quantite
+        
+        def set_nom(self, nom):
+            self.__nom = nom
+        def set_prix(self, prix):
+            self.__prix = prix
+        def set_nom(self, nom):
+            self.__nom = nom
+    
+        @staticmethod
+        def sortList(list):
+            list_dec = []
+            while list != []:
+                max = list[0]
+                i = 1
+                for i in range(len(list)):
+                    if list[i] > max:
+                        max = list[i]
+                list_dec.append(max)
+                list.remove(max)
+            return list_dec
+        
+        @staticmethod
+        def printStar(num):
+            for i in range(num):
+                for j in range(i):
+                    print('*', end='')
+                print('\n')
+    
+import random as r
+    
+ l = r.sample(range(0, 200), 10)
+ p2 = Produit("mac", 10000, 2)
+ p2.set_nom('n1')
+ print(p2.get_nom())
+    
+ l2 = Produit.sortList(l)
+ print(l2)</pre></h4>
+    </div>
+    <button class="btn btn-success float-left"id="btn5">Run Code</button><br><br>
+    <div class="run">
+      <div class="run2 ">
+        <h5><pre>
+n1
+[194, 193, 162, 145, 141, 123, 115, 93, 79, 7]
+</pre></h5>
+      </div>
+    </div>
+    </div>
+  <br>
+    <img src="TP N°1 POO 2_page-0005.jpg" alt="">
+    <div class="all">
+      <div class="code">
+        <h4><pre>
+class Produit:
+          def __init__(self, nom, prix, quantite_stack):
+              self._nom = nom
+              self._prix = prix
+              self._quantite = quantite_stack
+      
+          def afficher_details(self):
+              print(f"Nom : {self._nom}, Prix : {self._prix}, Quantité Stock : {self._quantite}")
+          def calculer_prix_total(self, quantité):
+              return f"Prix Total {self._prix * quantité}"
+      
+class Aliment(Produit):
+          population = 0
+          def __init__(self, nom, prix, quantite_stack, date_peremption):
+              super().__init__(nom, prix, quantite_stack)
+              self._date = date_peremption
+              Aliment.population += 1
+          
+          def afficher_details(self):
+             print(f"Nom : {self._nom}, Prix : {self._prix}, Quantité Stock : {self._quantite}, Date de Peremption {self._date}")
+          
+          @classmethod
+          def nbr_aliment(cls):
+             print(f'Nomber total d\'aliments : {cls.population}')
+      
+ a1 = Aliment("mac", 10000, 2, "13-09-2022")
+ a1.afficher_details()
+ a2 = Aliment("swatch", 200, 100, "08-10-2020")
+ a2.afficher_details()
+ Aliment.nbr_aliment()</pre></h4>
+      </div>
+      <button class="btn btn-success float-left" id="btn6">Run Code</button><br><br>
+      <div class="run">
+        <div class="run3 ">
+          <h5><pre>
+Nom : mac, Prix : 10000, Quantité Stock : 2, Date de Peremption 13-09-2022
+Nom : swatch, Prix : 200, Quantité Stock : 100, Date de Peremption 08-10-2020
+Nomber total d'aliments : 2</pre></h5>
+        </div>
+      </div>
+      </div>
+    <br>
+      <img src="TP N°1 POO 2_page-0006.jpg" alt="">
+      <div class="all">
+        <div class="code">
+          <h4><pre>
+class Aliment(Produit):
+            population = 0
+            def __init__(self, nom, prix, quantite_stack, date_peremption):
+                super().__init__(nom, prix, quantite_stack)
+                self._date = date_peremption
+                Aliment.population += 1
+            
+            def afficher_details(self):
+               print(f"Nom : {self._nom}, Prix : {self._prix}, Quantité Stock : {self._quantite}, Date de Peremption {self._date}")
+        
+            @classmethod
+            def nbr_aliment(cls):
+                print(f'Nomber total d\'aliments : {cls.population}')
+            
+            def calculer_prix_total(self, quantité, date_per):
+               date_p = date_per.split('-')
+               date_x = self._date.split('-')
+               if int(date_x[0]) - 1 == int(date_p[0]):
+                  return (self._prix * quantité) - (self._prix * quantité * 0.1)
+               elif int(date_x[0]) - 2 == int(date_p[0]):
+                  return (self._prix * quantité) - (self._prix * quantité * 0.05)
+               else:
+                  return self._prix * quantité
+        
+ p3 = Aliment("book", 20, 200, '2024-02-12')
+ p4 = Aliment("clavier", 100, 30, "2024-01-14")
+        
+ Aliment.nbr_aliment()
+ print(p3.calculer_prix_total(10, '2023-05-15'))</pre></h4>
+        </div>
+        <button class="btn btn-success float-left" id="btn7">Run Code</button><br><br>
+        <div class="run">
+          <div class="run4 ">
+            <h5><pre>
+Nomber total d'aliments : 2
+200</pre></h5>
+          </div>
+        </div>
+        </div>
+      <br><br><br>
+</div>
+<div id="hh">
+  <a href="index.html"><i class='bx bx-arrow-back' style='color:#7effff'  ></i></a>
+</div>
+<div id="un"><a href="tp1.html">1</a></div>
+<div id="deux"><a href="tp3.html">3</a></div>
+<div id="quatre"><a href="tp4.html">4</a></div>
+  <!-- service section -->
+
+
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- custom js -->
+  <script type="text/javascript" src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+  <script>
+    $(document).ready(function(){
+      $(".btn1").click(function(){
+        $("#tp").slideToggle(3000)
+        $("#tp1").show(1000)
+        $("#tp2").slideToggle(3000)
+        $("#un,#deux,#quatre,#hh").hide(1000)
+      })
+      $("#i").click(function(){
+        $("#tp").slideUp(2000)
+        $("#tp1").hide(1000)
+        $("#tp2").hide(1000)
+        $("#un,#deux,#quatre,#hh").show(1000)
+      })
+      $("#btn4").click(function(){
+        $(".run1").show()
+      })
+      $("#btn5").click(function(){
+        $(".run2").show()
+      })
+      $("#btn6").click(function(){
+        $(".run3").show()
+      })
+      $("#btn7").click(function(){
+        $(".run4").show()
+      })
+    }
+  )
+   </script>
+</body>
+
+</html>

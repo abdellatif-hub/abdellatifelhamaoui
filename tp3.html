@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="">
+
+  <title> Finexo </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="tps.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="responsive.css" rel="stylesheet" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <h1 id="tp1">TP°3</h1>
+  <h3 id="tp2">________</h3>
+  <div class="hero_area">
+
+    <div class="hero_bg_box">
+      <div class="bg_img_box">
+        <img src="hero-bg.png" alt="">
+      </div>
+    </div>
+
+    <!-- header section strats -->
+    
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      TP numéro 3<br>
+                      
+                    </h1>
+                    <p>
+                      Les exercices comprend  Polymorphisme et Redéfinition des 
+                      Méthodes Dans L'exercice 1 et  Surcharge des Opérateurs et 
+                      Utilisation des Méthodes Abstraites Dans L'exercice 2 .
+
+                      
+                    </p>
+                    <div class="btn-box">
+                      <a href="#" class="btn1">
+                        La Correction
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="file.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+
+    </section>
+    <!-- end slider section -->
+  </div>
+<div id="tp">
+  <i class='bx bx-x' id="i"></i>
+  <img src="TP 3 POO_pages-to-jpg-00099.jpg" alt="">
+  <div class="all">
+    <div class="code">
+      <h4><pre>
+ from abc import ABCMeta, abstractmethod import math
+ class Vehicule 
+          (metaclass=ABCMeta):
+            @abstractmethod
+            def deplacer(self):
+                pass
+            @staticmethod
+            def prime(n):
+                try:
+                    i = 2
+                    b = True
+                    while b:
+                        if i == n:
+                            b=False
+                            return f'{n} est premier'
+                        if n%i == 0:
+                            b = False
+                            return f'{n} non premier'
+                        else:
+                            i += 1
+                except Exception as ex:
+                    return f"{n} n'est pas une nombre positif"
+                       
+ class Voiture(Vehicule):
+ def deplacer(self):
+ print("C'est une voiture")
+        
+ class Avion(Vehicule):
+ def deplacer(self):
+ print("C'est une avion")
+        
+ v1 = Voiture()
+ v2 =  Avion()
+        
+ print(v1.prime(59))</pre></h4>
+    </div>
+    <button class="btn btn-success float-left" id="btn4">Run Code</button><br><br>
+    <div class="run">
+      <div class="run1 ">
+        <h5><pre>
+59  est premier
+  </pre></h5>
+      </div>
+    </div>
+    </div>
+  <br>
+
+  <img src="TP 3 POO_pages-to-jpg-000100.jpg" alt="">
+  <div class="all">
+    <div class="code">
+      <h4><pre>
+ from abc import ABC , abstractmethod import math
+        
+ class Form(ABC):
+            @abstractmethod
+            def calculer_surface(self):
+                pass
+            
+ class Rectangle(Form):
+            def __init__(self,longeur,largeur):
+                self.longeur = longeur
+                self.largeur = largeur
+            
+            def __add__(self,obj):
+                return self.calculer_surface() + obj.calculer_surface()
+        
+            def calculer_surface(self):
+                return self.longeur*self.largeur
+            
+            def sommes_aires(self,form):
+                somme = form.calculer_surface() + self.calculer_surface()
+                return somme
+        
+ class Cercle(Form):
+            def __init__(self,rayon):
+                self.rayon = rayon
+            
+            def __add__(self,obj):
+                return self.calculer_surface() + obj.calculer_surface()
+        
+            def calculer_surface(self):
+                return self.rayon ** 2 * math.pi
+            
+            def sommes_aires(self,form):
+                somme = form.calculer_surface() + self.calculer_surface()
+                return somme
+        
+  r1 = Rectangle(5,7)
+  c1 = Cercle(4)
+  c2 = Cercle(6)
+        
+  print(r1.calculer_surface())
+  print(c1.calculer_surface())
+  print(c2.calculer_surface())
+        
+  print(c1.sommes_aires(c2))
+        
+  print(c1+c2)</pre></h4>
+    </div>
+    <button class="btn btn-success float-left"id="btn5">Run Code</button><br><br>
+    <div class="run">
+      <div class="run2 ">
+        <h5><pre>
+    35
+    50.26548245743669
+    113.09733552923255
+    163.36281798666926
+    163.36281798666926
+</pre></h5>
+      </div>
+    </div>
+    </div>
+  <br><br><br>
+</div>
+<div id="hh">
+  <a href="index.html"><i class='bx bx-arrow-back' style='color:#7effff'  ></i></a>
+</div>
+<div id="un"><a href="tp1.html">1</a></div>
+<div id="deux"><a href="tp2.html">2</a></div>
+<div id="quatre"><a href="tp4.html">4</a></div>
+
+  <!-- service section -->
+
+
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- custom js -->
+  <script type="text/javascript" src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+  <script>
+    $(document).ready(function(){
+      $(".btn1").click(function(){
+        $("#tp").slideToggle(3000)
+        $("#tp1").show(1000)
+        $("#tp2").slideToggle(3000)
+        $("#un,#deux,#quatre,#hh").hide(1000)
+      })
+      $("#i").click(function(){
+        $("#tp").slideUp(2000)
+        $("#tp1").hide(1000)
+        $("#tp2").hide(1000)
+        $("#un,#deux,#quatre,#hh").show(1000)
+      })
+      $("#btn4").click(function(){
+        $(".run1").show()
+      })
+      $("#btn5").click(function(){
+        $(".run2").show()
+      })
+    }
+  )
+   </script>
+</body>
+
+</html>

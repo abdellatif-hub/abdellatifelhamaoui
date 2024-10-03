@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="">
+
+  <title> Finexo </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="tps.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="responsive.css" rel="stylesheet" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+  <h1 id="tp1">TP°1</h1>
+  <h3 id="tp2">________</h3>
+  <div class="hero_area">
+
+    <div class="hero_bg_box">
+      <div class="bg_img_box">
+        <img src="hero-bg.png" alt="">
+      </div>
+    </div>
+
+    <!-- header section strats -->
+    
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      TP numéro 1<br>
+                      
+                    </h1>
+                    <p>
+                      Les exercices comprend  Compréhension des Composantes 
+                      d'une Classe Dans L'exercice 1 et Encapsulation et Modificateurs Dans L'exercice 2 et  Définition et Destruction d'un Objet Dans L'exercice 3, Méthodes et Visibilité Dans L'exercice 4
+
+                      
+                    </p>
+                    <div class="btn-box">
+                      <a href="#" class="btn1">
+                        La Correction
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="file.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+
+    </section>
+    <!-- end slider section -->
+  </div>
+<div id="tp">
+  <i class='bx bx-x' id="i"></i>
+  <img src="TP N°1 POO 2_page-0003.jpg" alt="">
+  <div class="all">
+  <div class="code">
+    <h4><pre>
+
+class Personne:
+  population = 0
+  def __init__(self, nom, age, salaire):
+      self.nom = nom
+      self.age = age
+      self.sal = salaire
+      Personne.population += 1
+  def affiche(self):
+      print(f"nom:{self.nom}, age:{self.age}, salaire:{self.sal}")
+  @classmethod
+  def nbr_personnes(cls):
+      return cls.population
+
+ p1 = Personne("abdelatif", 91, 1500)
+ p1.affiche()
+ p2 = Personne("mohamed", 15, 2000)
+ p2.affiche()
+ print(Personne.nbr_personnes())
+  </pre></h4>
+  </div>
+  <button class="btn btn-success float-left" id="btn4">Run Code</button><br><br>
+  <div class="run">
+    <div class="run1 ">
+      <h5><pre>
+nom:abdelatif, age:91, salaire:1500
+nom:mohamed, age:15, salaire:2000
+</pre></h5>
+    </div>
+  </div>
+  </div>
+<br>
+  <img src="TP N°1 POO 2_page-0004.jpg" alt="">
+  <div class="all">
+    <div class="code">
+      <h4><pre>
+class Personne:
+        population = 0
+        def __init__(self, nom, age, salaire):
+            self.nom = nom
+            self.age = age
+            self.__salaire = salaire
+            Personne.population += 1
+        
+        def afficher(self):
+            print(f'Nom:{self.nom}, Age:{self.age}')
+    
+        @classmethod
+        def nbr_personnes(cls):
+            print(f'Nombre total:{cls.population}')
+    
+        def _getters(self):
+            print(f"Salaire {self.nom} est {self.__salaire} DH")
+        def _setters(self, n):
+            self.__salaire = int(n)
+    
+        def Augmenter_salaire(self, n):
+            self.__salaire = self.__salaire + (self.__salaire * (n/100))
+    
+  p1 = Personne("hamza", 14, 1000)
+  p2 = Personne("fahd", 40, 500)
+  p1.Augmenter_salaire(10)
+  p1._getters()
+  p2._setters(6000)
+  p2.Augmenter_salaire(15)
+  p2._getters()</pre></h4>
+    </div>
+    <button class="btn btn-success float-left"id="btn5">Run Code</button><br><br>
+    <div class="run">
+      <div class="run2 ">
+        <h5><pre>
+Salaire  hamza est 1100 DH
+Salaire  fahd est 6900 DH
+</pre></h5>
+      </div>
+    </div>
+    </div>
+  <br>
+    <img src="TP N°1 POO 2_page-0005.jpg" alt="">
+    <div class="all">
+      <div class="code">
+        <h4><pre>
+class Cours(Personne):
+          def __init__(self, nom, professeur, etudiants=None):
+              self.nom = nom
+              self.professeur = professeur
+              self.etudiants = etudiants if etudiants is not None else []
+          def quitter_cours(self, etudiant):
+              self.etudiants.remove(etudiant)
+      
+ professeur = Personne("hassan", 13, 100)
+      
+ p1 = Personne("brahim", 40, 200)
+ p2 = Personne("hafsa", 13, 1000)
+ p3 = Personne("sanaa", 25, 500)
+ p4 = Personne("hamid", 10, 66)
+      
+ cour1 = Cours("Java", professeur, [p1, p2])
+ cour2 = Cours("css", professeur, [p1, p2, p3, p4])
+ cour3 = Cours("c++ & C#", professeur, [p1, p2, p3])
+      
+  cour2.quitter_cours(p1)
+  print(f"Etudiants restants dans le cours Python: {[e.nom for e in cour2.etudiants]}")</pre></h4>
+      </div>
+      <button class="btn btn-success float-left" id="btn6">Run Code</button><br><br>
+      <div class="run">
+        <div class="run3 ">
+          <h5><pre>
+Etudiants restants dans le cours Python: ['hafsa', 'sanaa', 'hamid']</pre></h5>
+        </div>
+      </div>
+      </div>
+    <br>
+      <img src="TP N°1 POO 2_page-0006.jpg" alt="">
+      <div class="all">
+        <div class="code">
+          <h4><pre>
+class Cours(Personne):
+            nbr_etudiant = 0
+            population = ""
+            def __init__(self, nom, professeur, etudiants=None):
+                self.nom = nom
+                self.professeur = professeur
+                self.etudiants = etudiants if etudiants is not None else []
+                if len(self.etudiants) > Cours.nbr_etudiant:
+                    Cours.nbr_etudiant = len(self.etudiants)
+                    Cours.population = self.nom
+        
+            def quitter_cours(self, etudiant):
+                self.etudiants.remove(etudiant)
+        
+            def annoncer_cours(self, etudiantAge=19):
+                print(f"Cours : {self.nom}")
+                print("Professeur :")
+                self.professeur.afficher()
+                print("Etudiants :")
+                for etudiant in self.etudiants:
+                    if etudiant.age == etudiantAge:
+                        etudiant.afficher()
+                def imbriquee():
+                    if len(self.etudiants) > 10:
+                        print("Plus de 10 étudiants")
+                    elif len(self.etudiants) < 10:
+                        print("Moins de 10 étudiants")
+                    else:
+                        print("10 étudiants")
+                    moyenneAge = sum(etudiant.age for etudiant in self.etudiants) / len(self.etudiants)
+                    print(f"Moyenne d'âge des étudiants est {moyenneAge:.1f}")
+                imbriquee()
+        
+            @classmethod
+            def cours_populaire(cls):
+                print(f"Cours avec le plus d'étudiants est {Cours.population} avec {Cours.nbr_etudiant} étudiants")
+        
+ professeur = Personne("Oliver", 28, 9000)
+ p1 = Personne("Emma", 20, 5000)
+ p2 = Personne("Liam", 23, 6000)
+ p3 = Personne("Ava", 22, 5500)
+ p4 = Personne("Noah", 21, 5200)
+        
+ cour1 = Cours("JavaScript", professeur, [p1, p2])
+ cour2 = Cours("Python", professeur, [p1, p2, p3, p4])
+ cour3 = Cours("HTML & CSS", professeur, [p1, p2, p3])
+        
+ cour2.quitter_cours(p1)
+ cour1.annoncer_cours(20)
+ Cours.cours_populaire()
+ cour2.annoncer_cours()</pre></h4>
+        </div>
+        <button class="btn btn-success float-left" id="btn7">Run Code</button><br><br>
+        <div class="run">
+          <div class="run4 ">
+            <h5><pre>
+Professeur :
+Nom:Oliver, Age:28
+Etudiants :
+Nom:Emma, Age:20
+Cours : JavaScript
+Moins de 10 étudiants
+Moyenne d'âge des étudiants est 21.5
+Cours avec le plus d'étudiants est Python avec 4 étudiants
+Cours : Python
+Professeur :
+Nom:Oliver, Age:28
+Etudiants :
+Moins de 10 étudiants
+Moyenne d'âge des étudiants est 22.0</pre></h5>
+          </div>
+        </div>
+        </div>
+      <br><br><br>
+</div>
+<div id="hh">
+  <a href="index.html"><i class='bx bx-arrow-back' style='color:#7effff'  ></i></a>
+</div>
+<div id="deux"><a href="tp3.html">3</a></div>
+<div id="un"><a href="tp2.html">2</a></div>
+<div id="quatre"><a href="tp4.html">4</a></div>
+  <!-- service section -->
+
+
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- custom js -->
+  <script type="text/javascript" src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+   <script>
+    $(document).ready(function(){
+      $(".btn1").click(function(){
+        $("#tp").slideToggle(3000)
+        $("#tp1").show(1000)
+        $("#tp2").slideToggle(3000)
+        $("#un,#deux,#quatre,#hh").hide(1000)
+      })
+      $("#i").click(function(){
+        $("#tp").slideUp(2000)
+        $("#tp1").hide(1000)
+        $("#tp2").hide(1000)
+        $("#un,#deux,#quatre,#hh").show(1000)
+      })
+      $("#btn4").click(function(){
+        $(".run1").show()
+      })
+      $("#btn5").click(function(){
+        $(".run2").show()
+      })
+      $("#btn6").click(function(){
+        $(".run3").show()
+      })
+      $("#btn7").click(function(){
+        $(".run4").show()
+      })
+    }
+  )
+   </script>
+</body>
+
+</html>
